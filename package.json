@@ -1,0 +1,32 @@
+{
+  "name": "devmach",
+  "version": "1.0.0",
+  "description": "Social network for Developers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/practice-sessions/devmach.git"
+  },
+  "author": "Mekarosi Assa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/practice-sessions/devmach/issues"
+  },
+  "homepage": "https://github.com/practice-sessions/devmach#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.2",
+    "express-validator": "^6.1.1",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.9",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
+}
