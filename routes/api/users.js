@@ -32,7 +32,7 @@ router.post(
     const { name, email, password } = req.body;
 
     try {
-      // See if user exists
+      // See if user already exist
 
       let user = await User.findOne({ email });
 
@@ -62,6 +62,8 @@ router.post(
       user.password = await bcrypt.hash(password, salt);
 
       await user.save();
+
+      // return jsonwebtoken
 
       const payload = {
         user: {
