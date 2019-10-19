@@ -164,4 +164,32 @@ router.delete('/', auth, async (req, res) => {
   }
 });
 
+// @route    PUT api/profile/experience
+// @desc    Add profile experience
+// @access   Private
+
+router.put(
+  '/experience',
+  [
+    auth,
+    [
+      check('title', 'Title is required')
+        .not()
+        .isEmpty(),
+      check('company', 'Company is required')
+        .not()
+        .isEmpty(),
+      check('from', 'From date is required')
+        .not()
+        .isEmpty()
+    ]
+  ],
+  async (req, res) => {
+    const error = validationResult(req);
+    if (!error.isEmpty()) {
+      return res.status(400).json({ error: error.array() });
+    }
+  }
+);
+
 module.exports = router;
