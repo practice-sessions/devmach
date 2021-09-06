@@ -42,9 +42,7 @@ const Dashboard = ({ getCurrentProfile, deleteAccount, auth: { user }, profile: 
             </Fragment>}
             <br/>
           
-            <Link to='/create-profile' className='btn btn-primary my-1'>
-                   Create Profile
-               </Link>
+        
         </Fragment>
         )
             

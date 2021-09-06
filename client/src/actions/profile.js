@@ -2,13 +2,13 @@ import axios from 'axios'
 import { setAlert } from './alert'
 
 import {
-    ACCOUNT_DELETED,
-    CLEAR_PROFILE,
     GET_PROFILE,
     GET_PROFILES,
-    GET_REPOS,
     PROFILE_ERROR,
-    UPDATE_PROFILE
+    UPDATE_PROFILE,
+    CLEAR_PROFILE,
+    ACCOUNT_DELETED,
+    GET_REPOS
 } from './types'
 
 // Get current users profile
